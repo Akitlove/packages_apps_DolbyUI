@@ -1,0 +1,15 @@
+### How to use?
+
+1. Clone this repo to packages/apps/DolbyUI
+
+2. To build add `device.mk` in device tree:
+
+```
+# LunarisDolby
+PRODUCT_PACKAGES += \
+    LunarisDolby
+```
+
+# Credits:
+ * [**LunarisDolby Manager**](https://github.com/Pong-Development/hardware_dolby)
+
