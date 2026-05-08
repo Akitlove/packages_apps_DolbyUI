@@ -167,7 +167,7 @@ fun PresetImportExportScreen(
                     IconButton(onClick = { navController.navigateUp() }) {
                         Icon(
                             Icons.AutoMirrored.Filled.ArrowBack, 
-                            contentDescription = "Back",
+                            contentDescription = stringResource(R.string.nav_back),
                             tint = MaterialTheme.colorScheme.onSurface
                         )
                     }
@@ -176,7 +176,7 @@ fun PresetImportExportScreen(
                     IconButton(onClick = { showBatchExport = true }) {
                         Icon(
                             Icons.Default.FileDownload, 
-                            contentDescription = "Batch export",
+                            contentDescription = stringResource(R.string.batch_export),
                             tint = MaterialTheme.colorScheme.onSurface
                         )
                     }
@@ -460,7 +460,7 @@ fun PresetImportExportScreen(
     
     if (showDeleteDialog && presetToDelete != null) {
         ModernConfirmDialog(
-            title = "Delete Preset",
+            title = stringResource(R.string.dolby_geq_delete_preset),
             message = "Are you sure you want to delete '${presetToDelete!!.name}'? This will remove it from your preset list and cannot be undone.",
             icon = Icons.Default.Delete,
             onConfirm = {

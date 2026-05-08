@@ -103,6 +103,7 @@
     <string name="choose_equalizer_precision">Choose equalizer precision: more bands = finer control</string>
 
     <!-- Dolby intelligent EQ -->
+    <string name="dolby_ieq_title">Intelligent Equalizer</string>
     <string name="dolby_ieq">Intelligent equalizer</string>
     <string name="dolby_balanced">Balanced</string>
     <string name="dolby_warm">Warm</string>
@@ -171,4 +172,14 @@
     <string name="dolby_mid_enhancer">Mid enhancer</string>
     <string name="dolby_mid_level">Mid level</string>
     <string name="dolby_mid_enhancer_summary">Enhances mid-frequency sounds for clearer vocals and instruments</string>
+
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="delete">Delete</string>
+    <string name="equalizer_view">Equalizer View</string>
+    <string name="view_mode_curve">Curve</string>
+    <string name="view_mode_sliders">Sliders</string>
+    <string name="nav_back">Back</string>
+    <string name="surround_virtualizer_title">Surround Virtualizer</string>
+    <string name="dialogue_enhancement_title">Dialogue Enhancement</string>
 </resources>

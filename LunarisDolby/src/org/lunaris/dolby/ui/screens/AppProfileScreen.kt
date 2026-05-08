@@ -255,8 +255,8 @@ fun AppProfileScreen(
 
     if (showClearAllDialog) {
         ModernConfirmDialog(
-            title = "Clear All App Profiles",
-            message = "This will remove all per-app profile assignments. Apps will use the default profile.",
+            title = stringResource(R.string.app_profiles_clear_all),
+            message = stringResource(R.string.app_profiles_clear_all_message),
             icon = Icons.Default.ClearAll,
             onConfirm = {
                 viewModel.clearAllAppProfiles()

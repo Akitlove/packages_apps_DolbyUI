@@ -81,21 +81,21 @@ fun ModernEqualizerScreen(
                     IconButton(onClick = { showSaveDialog = true }) {
                         Icon(
                             Icons.Default.Save, 
-                            contentDescription = "Save",
+                            contentDescription = stringResource(R.string.save),
                             tint = MaterialTheme.colorScheme.onSurface
                         )
                     }
                     IconButton(onClick = { showResetDialog = true }) {
                         Icon(
                             Icons.Default.RestartAlt, 
-                            contentDescription = "Reset",
+                            contentDescription = stringResource(R.string.reset),
                             tint = MaterialTheme.colorScheme.onSurface
                         )
                     }
                     IconButton(onClick = { navController.navigate("import_export") }) {
                         Icon(
                             Icons.Default.ImportExport, 
-                            contentDescription = "Import/Export",
+                            contentDescription = stringResource(R.string.preset_import_export),
                             tint = MaterialTheme.colorScheme.onSurface
                         )
                     }
@@ -105,7 +105,7 @@ fun ModernEqualizerScreen(
                             IconButton(onClick = { showDeleteDialog = true }) {
                                 Icon(
                                     Icons.Default.Delete, 
-                                    contentDescription = "Delete",
+                                    contentDescription = stringResource(R.string.delete),
                                     tint = MaterialTheme.colorScheme.error
                                 )
                             }
@@ -350,7 +350,7 @@ private fun ModernEqualizerContent(
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     Text(
-                        text = "Equalizer View",
+                        text = stringResource(R.string.equalizer_view),
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.onSurface
@@ -362,7 +362,7 @@ private fun ModernEqualizerContent(
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     ViewModeTile(
-                        title = "Curve",
+                        title = stringResource(R.string.view_mode_curve),
                         icon = Icons.Default.ShowChart,
                         isSelected = viewMode == EqualizerViewMode.CURVE,
                         onClick = { onViewModeChange(EqualizerViewMode.CURVE) },
@@ -370,7 +370,7 @@ private fun ModernEqualizerContent(
                     )
                     
                     ViewModeTile(
-                        title = "Sliders",
+                        title = stringResource(R.string.view_mode_sliders),
                         icon = Icons.Default.Tune,
                         isSelected = viewMode == EqualizerViewMode.SLIDERS,
                         onClick = { onViewModeChange(EqualizerViewMode.SLIDERS) },
