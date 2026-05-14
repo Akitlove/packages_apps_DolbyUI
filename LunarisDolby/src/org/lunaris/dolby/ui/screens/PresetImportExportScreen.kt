@@ -518,28 +518,28 @@ private fun PresetExportCard(
                     IconButton(onClick = onExportFile) {
                         Icon(
                             Icons.Default.FileDownload, 
-                            contentDescription = "Export to file",
+                            contentDescription = stringResource(R.string.export_to_file),
                             tint = MaterialTheme.colorScheme.primary
                         )
                     }
                     IconButton(onClick = onCopyClipboard) {
                         Icon(
                             Icons.Default.ContentCopy, 
-                            contentDescription = "Copy to clipboard",
+                            contentDescription = stringResource(R.string.copy_to_clipboard),
                             tint = MaterialTheme.colorScheme.secondary
                         )
                     }
                     IconButton(onClick = onShare) {
                         Icon(
                             Icons.Default.Share, 
-                            contentDescription = "Share",
+                            contentDescription = stringResource(R.string.share),
                             tint = MaterialTheme.colorScheme.tertiary
                         )
                     }
                     IconButton(onClick = onDelete) {
                         Icon(
                             Icons.Default.Delete, 
-                            contentDescription = "Delete",
+                            contentDescription = stringResource(R.string.delete),
                             tint = MaterialTheme.colorScheme.error
                         )
                     }

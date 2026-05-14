@@ -182,4 +182,24 @@
     <string name="nav_back">返回</string>
     <string name="surround_virtualizer_title">环绕虚拟器</string>
     <string name="dialogue_enhancement_title">加强对话</string>
+    <string name="credits">信誉</string>
+    <string name="export_to_file">导出到文件</string>
+    <string name="copy_to_clipboard">复制到剪贴板</string>
+    <string name="share">分享</string>
+    <string name="clear_all">全部清除</string>
+    <string name="refresh">刷新</string>
+    <string name="clear_search">清除搜索</string>
+    <string name="selected">已选择</string>
+    <string name="band_mode_mismatch_detail">此 %1$s 预设无法在 %2$s 模式下编辑。请切换到 %1$s 或选择兼容的预设</string>
+    <string name="credits_and_contributors">致谢与贡献者</string>
+    <string name="contributors_thank_you">感谢所有为本项目做出贡献的人！</string>
+    <string name="view_on_github">在 GitHub 上查看</string>
+    <string name="main_contributors">主要贡献者</string>
+    <string name="all_other_contributors">以及所有其他贡献者</string>
+    <string name="check_github_complete_list">查看 GitHub 仓库获取完整列表</string>
+    <string name="interactive_frequency_response">交互式频率响应</string>
+    <string name="frequency_response_readonly">频率响应（只读）</string>
+    <string name="eq_edit_hint">拖动控制点调节增益（±15 dB）• %s</string>
+    <string name="eq_readonly_hint">只读视图 • 频段模式不匹配</string>
+
 </resources>

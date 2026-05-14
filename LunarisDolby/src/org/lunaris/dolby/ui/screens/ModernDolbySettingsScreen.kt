@@ -56,14 +56,14 @@ fun ModernDolbySettingsScreen(
                     IconButton(onClick = { showCreditsDialog = true }) {
                         Icon(
                             Icons.Default.Info, 
-                            contentDescription = "Credits",
+                            contentDescription = stringResource(R.string.credits),
                             tint = MaterialTheme.colorScheme.onSurface
                         )
                     }
                     IconButton(onClick = { showResetDialog = true }) {
                         Icon(
                             Icons.Default.RestartAlt, 
-                            contentDescription = "Reset",
+                            contentDescription = stringResource(R.string.reset),
                             tint = MaterialTheme.colorScheme.onSurface
                         )
                     }

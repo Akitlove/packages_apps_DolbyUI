@@ -320,8 +320,11 @@ private fun ModernEqualizerContent(
                         )
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
-                            text = "This ${state.currentPreset.bandMode.displayName} preset cannot be edited in ${state.bandMode.displayName} mode. " +
-                                  "Switch to ${state.currentPreset.bandMode.displayName} or select a compatible preset.",
+                            text = stringResource(
+                                R.string.band_mode_mismatch_detail,
+                                state.currentPreset.bandMode.displayName,
+                                state.bandMode.displayName
+                            ),
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onErrorContainer
                         )
@@ -438,8 +441,10 @@ private fun CurveViewContent(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = if (canEdit) "Interactive Frequency Response" 
-                          else "Frequency Response (Read-only)",
+                    text = if (canEdit)
+                        stringResource(R.string.interactive_frequency_response)
+                    else
+                        stringResource(R.string.frequency_response_readonly),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold,
                     color = if (canEdit) MaterialTheme.colorScheme.onSurface
@@ -461,10 +466,10 @@ private fun CurveViewContent(
                 }
             }
             Text(
-                text = if (canEdit) 
-                    "Drag the control points to adjust gain (±15 dB) • ${getFrequencyRange(state.bandMode)}"
+                text = if (canEdit)
+                    stringResource(R.string.eq_edit_hint, getFrequencyRange(state.bandMode))
                 else
-                    "Read-only view • Band mode mismatch",
+                    stringResource(R.string.eq_readonly_hint),
                 style = MaterialTheme.typography.bodySmall,
                 color = if (canEdit) MaterialTheme.colorScheme.onSurfaceVariant
                       else MaterialTheme.colorScheme.error,
